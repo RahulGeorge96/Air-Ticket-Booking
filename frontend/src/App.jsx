@@ -11,7 +11,7 @@ import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
 import HomePage from "./pages/HomePage";
 import FlightsPage from "./pages/FlightsPage";
-import DashboardPage from "./pages/DashboardPage";
+// import DashboardPage from "./pages/DashboardPage";
 
 
 function App() {
@@ -35,12 +35,12 @@ function App() {
               isAuthenticated ? <FlightsPage /> : <Navigate to="/login" />
             }
           />
-          <Route
+          {/* <Route
             path="/dashboard"
             element={
               isAuthenticated ? <DashboardPage/> : <Navigate to="/login" />
             }
-          />
+          /> */}
         </Routes>
       </Router>
     </ThemeProvider>
