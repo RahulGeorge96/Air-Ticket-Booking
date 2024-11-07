@@ -13,6 +13,7 @@ import HomePage from "./pages/HomePage";
 import FlightsPage from "./pages/FlightsPage";
 import DashboardPage from "./pages/DashboardPage";
 
+
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(
     !!localStorage.getItem("token")
@@ -37,7 +38,7 @@ function App() {
           <Route
             path="/dashboard"
             element={
-              isAuthenticated ? <DashboardPage /> : <Navigate to="/login" />
+              isAuthenticated ? <DashboardPage/> : <Navigate to="/login" />
             }
           />
         </Routes>
